@@ -1,0 +1,86 @@
+@media (max-width: 1230px){
+    .container{
+        width: 976px;
+    }
+    .burger{
+        display: none;
+    }
+
+}
+@media (max-width: 992px){
+    .container{
+        width: 740px;
+    }
+    .menu{
+        display: none;
+    }
+    .burger{
+        display: none;
+    }
+    .team-item{
+        width: 100%;
+    }
+
+}
+@media (max-width: 767px){
+    .container{
+        width: 560px;
+    }
+
+
+    .burger{
+        display: flex;
+    }
+    .menu{
+        background: #587298;
+        border-radius: 15px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+        z-index: 4;
+    }
+
+    .burger {
+        z-index: 5;
+        display: flex;
+        position: fixed;
+        right: 50px;
+        top: 50px;
+    }
+
+    .menu.show {
+        left: 0;
+    }
+
+    .menu-show {
+        position: fixed;
+        right: 0;
+        top: 20px;
+    }
+
+}
+@media (max-width: 540px){
+    .container{
+        width: 320px;
+    }
+    .logo-img{
+        width: 90px;
+    }
+    .header-link{
+        font-size: 14px;
+    }
+    .header-btn{
+
+    }
+    .tools-item{
+        margin-bottom: 20px;
+    }
+
+}
