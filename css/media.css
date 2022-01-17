@@ -1,37 +1,55 @@
-@media (max-width: 1230px){
-    .container{
-        width: 976px;
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1230px;
     }
-    .burger{
+
+    .burger {
         display: none;
     }
 
 }
-@media (max-width: 992px){
-    .container{
-        width: 740px;
+
+@media (max-width: 1230px) {
+    .container {
+        max-width: 976px;
     }
-    .menu{
+
+    .burger {
         display: none;
     }
-    .burger{
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .menu {
         display: none;
     }
-    .team-item{
+
+    .burger {
+        display: none;
+    }
+
+    .team-item {
         width: 100%;
     }
 
 }
-@media (max-width: 767px){
-    .container{
-        width: 560px;
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 560px;
     }
 
 
-    .burger{
+    .burger {
         display: flex;
     }
-    .menu{
+
+    .menu {
         background: #587298;
         border-radius: 15px;
         position: fixed;
@@ -65,22 +83,223 @@
         top: 20px;
     }
 
+    .team-item {
+        width: 100%;
+        height: 350px;
+    }
+
+    .team-list {
+        font-size: 8px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .w-100 {
+        width: 100px;
+    }
+
 }
-@media (max-width: 540px){
-    .container{
-        width: 320px;
+
+@media (max-width: 540px) {
+    .container {
+        max-width: 377px;
     }
-    .logo-img{
+
+    .header {
+        padding: 10px 0;
+        display: flex;
+    }
+
+    .header .col-4 {
+        align-items: center;
+    }
+
+    .logo-img {
         width: 90px;
+        margin: 15px 0 0 0;
     }
-    .header-link{
+    .header-item {
+        margin-right: 150px;
+    }
+
+    .header-link {
         font-size: 14px;
-    }
-    .header-btn{
+        margin-right: 10px;
 
     }
-    .tools-item{
+
+    .header-btn {
+        width: 100px;
+        height: 42px;
+        padding: 6px 26px;
+        font-size: 12px;
+    }
+
+
+    .hero {
+        padding: 25px 0;
+    }
+
+    .hero-img {
+        margin-left: 0;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .hero-desc {
+        font-size: 14px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .feedback-form {
         margin-bottom: 20px;
     }
+
+    .feedback-email {
+        width: 280px;
+        height: 47px;
+        padding: 5px 111px 5px 35px;
+        font-size: 10px;
+    }
+
+    .feedback-icon i {
+        left: 10px;
+        bottom: 10px;
+        font-size: 24px;
+
+    }
+
+    .feedback-btn {
+        width: 88px;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 12px;
+        position: absolute;
+        top: 4px;
+        right: 69px;
+
+    }
+
+    .social-icons {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .social-icons i {
+        margin-right: 10px;
+        font-size: 26px;
+
+    }
+
+    .new-tools, .tools {
+        padding: 30px 0;
+    }
+    .team {
+        padding: 20px 0;
+    }
+
+    .team-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .team-item img {
+        height: 250px;
+    }
+
+    .team-item-img {
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .section__title {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .section__desc {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .tools-item {
+        margin-bottom: 20px;
+        padding: 5px 22px;
+        text-align: center;
+    }
+
+    .tools-free {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .tools-free-title {
+        font-size: 18px;
+
+    }
+
+    .free {
+        font-size: 14px;
+    }
+
+    .tools-free-desc {
+        font-size: 14px;
+
+    }
+
+    .brands {
+        padding: 30px 0;
+    }
+
+    .brands-title {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .new-tool-text-align {
+        margin: 0 0 10px;
+    }
+
+    .new-tools-btn {
+        font-size: 12px;
+        width: 130px;
+        height: 55px;
+        padding: 10px;
+        margin-left: 100px;
+    }
+    .info-container {
+        padding: 30px 0;
+    }
+    .info-btn {
+        position: absolute;
+        right: 5px;
+    }
+    .footer {
+        text-align: center;
+        padding: 15px 0;
+    }
+    .footer .col-sm-12{
+        justify-content: center;
+    }
+    .footer-logo-img {
+        width: 100px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+
+    }
+   .footer-title a{
+       font-size: 16px;
+   }
+   .footer-desc a{
+       font-size: 12px;
+   }
+
 
 }

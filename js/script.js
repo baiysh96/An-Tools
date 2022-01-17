@@ -27,7 +27,10 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    dots: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+
+
 
     // If we need pagination
     pagination: {
@@ -44,6 +47,22 @@ const swiper = new Swiper('.swiper', {
     // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar',
+        draggable: true,
+        loop: true,
+    },
+    breakpoints: {
+        320: {
+            spaceBetween: 50,
+            slidesPerView: 1,
+        },
+        768:{
+            spaceBetween: 20,
+            slidesPerView: 1,
+        },
+        992:{
+            spaceBetween: 10,
+            slidesPerView: 1,
+        },
     },
 });
 
