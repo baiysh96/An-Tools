@@ -129,9 +129,10 @@
     }
 
     .header-btn {
-        width: 100px;
-        height: 42px;
-        padding: 6px 26px;
+        min-width: 90px;
+        min-height: 20px;
+        margin-right: 100px;
+        padding: 2px 20px 2px 13px;
         font-size: 12px;
     }
 

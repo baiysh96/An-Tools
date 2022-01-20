@@ -66,15 +66,9 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+    return new bootstrap.Dropdown('dropdownToggleEl')
+})
 
-const button = document.querySelector('#button');
-const tooltip = document.querySelector('#tooltip');
-
-// Pass the button, the tooltip, and some options, and Popper will do the
-// magic positioning for you:
-Popper.createPopper(button, tooltip, {
-    placement: 'right',
-});
-createPopper(button, tooltip, {
-    modifiers: [preventOverflow, flip],
-});
+AOS.init();
