@@ -62,15 +62,16 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
-var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+const dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+ const dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
     return new bootstrap.Dropdown('dropdownToggleEl')
 })
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
+        glyphOrientationHorizontal: true,
         items: 3,
         loop: true,
-
+        nav: true,
     });
 });
 AOS.init();

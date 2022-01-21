@@ -214,11 +214,18 @@
     .team-item img {
         height: 250px;
     }
+    .w-100{
+        margin-bottom: 20px;
+    }
 
     .team-item-img {
         height: 30px;
         position: absolute;
         bottom: 0;
+    }
+    .brands-item {
+        display: flex;
+        flex-direction: column;
     }
 
     .section__title {
