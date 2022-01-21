@@ -24,6 +24,9 @@ a {
     color: white;
 
 }
+button {
+    border: none;
+}
 
 a:hover {
     text-decoration: none;
@@ -153,6 +156,7 @@ a:hover {
 }
 
 .header-btn {
+    border: none;
     width: 118px;
     height: 48px;
     padding: 12px 27px;
@@ -216,17 +220,19 @@ a:hover {
 
 .feedback-icon i {
     position: absolute;
-    left: 14px;
-    bottom: 18px;
+    top: 21px;
+    left: 21px;
+    bottom: 21px;
     font-size: 28px;
     color: rgba(255, 255, 255, 0.38);
 
 }
 
 .feedback-email {
+    border: none;
     width: 497px;
     height: 64px;
-    padding: 21px 111px 21px 55px;
+    padding: 21px 252px 21px 55px;
     background: #283036;
     border-radius: 15px;
     font-size: 14px;
@@ -235,6 +241,7 @@ a:hover {
 }
 
 .feedback-btn {
+    border: none;
     width: 130px;
     height: 48px;
     background: #FF6E30;
@@ -289,7 +296,7 @@ a:hover {
     border-radius: 15px;
     padding: 33px;
     transition: 0.5s;
-
+    cursor: pointer;
 }
 
 .tools-item:hover {
@@ -297,7 +304,6 @@ a:hover {
     opacity: 1;
     backdrop-filter: blur(70%);
     border-radius: 10px;
-    border: 1px solid #5c636a;
     box-shadow: gainsboro;
 
 
@@ -336,10 +342,12 @@ a:hover {
 
 .swiper-button-next:after {
     color: #FF6E30;
+    font-size: 32px;
 }
 
 .swiper-button-prev:after {
     color: #FF6E30;
+    font-size: 32px;
 }
 
 .section__desc {
@@ -388,13 +396,7 @@ a:hover {
 }
 
 .tools-item:hover .heart-img{
-    /*!*background: red;*!*/
-    /*border-radius: 50%;*/
-    /*border: 3px solid red;*/
-    /*color:  red;*/
-    stroke: red;
-    fill: red;
-    color: red;
+    color: #FD3B41;
 
 }
 
@@ -433,20 +435,27 @@ a:hover {
 }
 
 .heart-img {
+    background: #283036;
+    box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
+    border-radius: 8px;
     margin-right: 20px;
+    padding: 12px 8px 8px;
+}
+.directory-img {
+    background: #283036;
+    box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
+    border-radius: 8px;
 }
 
-.heart-img:hover {
-    animation-fill-mode: both;
-    color-interpolation-filters: sRGB;
-}
-
-.brands {
-    background: rgba(44, 53, 61, 0.2);
+.brands-container {
+    background: rgba(44, 53, 61, 0.49);
     backdrop-filter: blur(50px);
-    /* Note: backdrop-filter has minimal browser support */
     border-radius: 25px;
-    padding: 55px 0;
+    padding: 55px 82px;
+    border: 2px solid;
+    border-image-source: linear-gradient(92.39deg, rgba(255, 255, 255, 0.05) -4.6%, rgba(255, 255, 255, 0) 96.79%);
+
+
 }
 
 .brands-title {
@@ -460,7 +469,9 @@ a:hover {
 
 .brands-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+
 }
 
 .team {
@@ -495,8 +506,20 @@ a:hover {
 
 }
 
-.swiper-pagination {
-    color: #FF6E30;
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
+    width: 44px;
+    border: none;
+    background-color: #283036;
+    color: #283036;
+    border-radius: 4px;
+    height: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+.swiper-pagination-bullet, .swiper-pagination-bullet-active:hover {
+    background-color: #FF6E30;
+    border-radius: 4px;
 }
 
 .info-container {
@@ -542,11 +565,6 @@ a:hover {
     text-align: left;
 }
 
-.swiper-horizontal .swiper-scrollbar {
-    cursor: pointer;
-    background-color: #FF6E30;
-    color: black;
-}
 
 .info-email {
     position: relative;
@@ -554,7 +572,10 @@ a:hover {
 
 .info-btn {
     position: absolute;
-    right: 5px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+
 
 }
 
@@ -562,7 +583,7 @@ a:hover {
     padding: 30px 0;
 }
 
-.footer-img {
+.footer-logo-img {
     display: block;
     margin-bottom: 27px;
 }
