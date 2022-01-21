@@ -35,6 +35,8 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
+        click: true,
+        loop: true,
 
     },
 
@@ -44,12 +46,6 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-        loop: true,
-    },
     breakpoints: {
         320: {
             spaceBetween: 50,
@@ -70,5 +66,11 @@ var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-tog
 var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
     return new bootstrap.Dropdown('dropdownToggleEl')
 })
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 3,
+        loop: true,
 
+    });
+});
 AOS.init();

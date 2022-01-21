@@ -8,7 +8,8 @@
     <title>AnTools</title>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/media.css">
@@ -286,18 +287,14 @@
     </div>
 </section>
 <section class="brands">
-    <div class="container swiper ">
+    <div class="container brands-container">
         <h3 class="brands-title">Trusted more than 150+ brand</h3>
-        <div class="brands-item swiper-wrapper">
-            <div class="swiper-slide"><img class="w-100" src="./images/microsoft-img.svg" alt="microsoft"></div>
-            <div class="swiper-slide"><img class="w-100" src="./images/google-img.svg" alt="google"></div>
-            <div class="swiper-slide"><img class="w-100" src="./images/slack-img.svg" alt="slack"></div>
-            <div class="swiper-slide"><img class="w-100" src="./images/wordpress-img.svg" alt="wordpress"></div>
+        <div class="brands-item owl-carousel owl-theme">
+            <div class=""><img class="w-100" src="./images/microsoft-img.svg" alt="microsoft"></div>
+            <div class=""><img class="w-100" src="./images/google-img.svg" alt="google"></div>
+            <div class=""><img class="w-100" src="./images/slack-img.svg" alt="slack"></div>
+            <div class=""><img class="w-100" src="./images/wordpress-img.svg" alt="wordpress"></div>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
     </div>
 </section>
 <section class="new-tools">
@@ -413,10 +410,9 @@
             </p>
         </div>
     </div>
-    <div class="swiper-pagination"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    <div class="swiper-scrollbar"></div>
+    <div class="swiper-pagination"></div>
 </section>
 <section class="info">
     <div class="container info-container">
@@ -458,9 +454,9 @@
         </div>
     </div>
 </footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
 <script src="./js/jquery.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/script.js"></script>
