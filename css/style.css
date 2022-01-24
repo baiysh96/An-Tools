@@ -56,6 +56,7 @@ a:hover {
     font-size: 16px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.55);
+    transition: 0.5s;
 }
 
 .burger {
@@ -311,6 +312,7 @@ a:hover {
 
 .tools-free {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
@@ -454,8 +456,6 @@ a:hover {
     padding: 55px 82px;
     border: 2px solid;
     border-image-source: linear-gradient(92.39deg, rgba(255, 255, 255, 0.05) -4.6%, rgba(255, 255, 255, 0) 96.79%);
-
-
 }
 
 .brands-title {
@@ -465,13 +465,6 @@ a:hover {
     line-height: 36px;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 56px;
-}
-
-.brands-item {
-    display: flex;
-    justify-content: space-around;
-
-
 }
 
 .team {
@@ -580,7 +573,8 @@ a:hover {
 }
 
 .footer {
-    padding: 30px 0;
+    padding: 70px 0;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-logo-img {
