@@ -22,7 +22,8 @@
                 <nav class="menu">
                     <a href="#home" class="menu-item">Home</a>
                     <div class="btn-group">
-                        <button id="button" type="button" class=" btn btn-light dropdown-toggle my-2" data-bs-toggle="dropdown"
+                        <button id="button" type="button" class=" btn btn-light dropdown-toggle my-2"
+                                data-bs-toggle="dropdown"
                                 aria-expanded="false" itemid="tooltip">
                             Categories
                         </button>
@@ -44,8 +45,8 @@
                 </div>
                 <div class="burger">
                     <span></span>
+                </div>
             </div>
-        </div>
         </div>
     </div>
 </header>
@@ -63,12 +64,12 @@
                     <button class="feedback-btn">Search</button>
                 </form>
                 <div class="social-icons">
-                    <i class='bx bxl-facebook'></i>
-                    <i class='bx bxl-instagram'></i>
-                    <i class='bx bxl-twitter'></i>
+                    <a href="https://www.facebook.com" class="facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.Instagram.com" class="instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.twitter.com" class="twitter"><i class='bx bxl-twitter'></i></a>
                 </div>
             </div>
-            <div class="col-lg-5 col-sm-12">
+            <div class="col-lg-5 col-sm-12 zoom-in-up">
                 <svg class="hero-img" width="589" height="568" viewBox="0 0 589 568" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path opacity="0.4"
@@ -156,7 +157,6 @@
                         </linearGradient>
                     </defs>
                 </svg>
-
             </div>
         </div>
     </div>
@@ -285,47 +285,45 @@
     </div>
 </section>
 <section class="brands">
-    <div class="container swiper">
+    <div class="container brands-container">
         <h3 class="brands-title">Trusted more than 150+ brand</h3>
-        <div class="brands-item swiper-wrapper">
-            <div class="swiper-slide"><img class="w-100" src="./images/microsoft-img.svg" alt="microsoft"></div>
-            <div class="swiper-slide"><img class="w-100" src="./images/google-img.svg" alt="google"></div>
-            <div class="swiper-slide"><img class="w-100" src="./images/slack-img.svg" alt="slack"></div>
-            <div class="swiper-slide"><img class="w-100" src="./images/wordpress-img.svg" alt="wordpress"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-12"><img class="w-100" src="./images/microsoft-img.svg" alt="microsoft"></div>
+            <div class="col-lg-3 col-sm-12"><img class="w-100" src="./images/google-img.svg" alt="google"></div>
+            <div class="col-lg-3 col-sm-12"><img class="w-100" src="./images/slack-img.svg" alt="slack"></div>
+            <div class="col-lg-3 col-sm-12"><img class="w-100" src="./images/wordpress-img.svg" alt="wordpress"></div>
+    </div>
     </div>
 </section>
 <section class="new-tools">
     <div class="container">
         <div class="row m-x-3">
             <div class="col-lg-6 col-sm-12 ">
-                <h2 class="section__title margin-top">Newcomer Tools</h2>
-                <p class="section__desc new-tool-text-align">Wow! see the latest update of the most recommended tools from reliable designers and
+                <h2 class="section__title section__title-text-left margin-top">Newcomer Tools</h2>
+                <p class="section__desc section__desc new-tool-text-align">Wow! see the latest update of the most
+                    recommended tools
+                    from reliable designers and
                     developers</p>
                 <button class="new-tools-btn">Explore more</button>
             </div>
             <div class="col-lg-3 my-20 col-sm-6">
-                    <div class="tools-item new-tools-margin">
-                        <div class="tools-free .d-flex">
-                            <img src="./images/zeplin.svg" alt="img" class="zeplin-img">
-                            <div class="tools-free-item">
-                                <h2 class="tools-free-title">Zeplin</h2>
-                                <a href="# https://www.figma.com" class="free">Free & Paid</a>
-                            </div>
-                        </div>
-                        <p class="tools-free-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="tools-item-inner">
-                            <div class="tools-item-img">
-                                <img src="./images/heart.svg" alt="img" class="heart-img">
-                                <img src="./images/directory-img.svg" alt="img" class="directory-img"></div>
-                            <button class="tools-btn">Visit</button>
+                <div class="tools-item new-tools-margin">
+                    <div class="tools-free .d-flex">
+                        <img src="./images/zeplin.svg" alt="img" class="zeplin-img">
+                        <div class="tools-free-item">
+                            <h2 class="tools-free-title">Zeplin</h2>
+                            <a href="# https://www.figma.com" class="free">Free & Paid</a>
                         </div>
                     </div>
-                   <div class="tools-item new-tools-margin">
+                    <p class="tools-free-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="tools-item-inner">
+                        <div class="tools-item-img">
+                            <img src="./images/heart.svg" alt="img" class="heart-img">
+                            <img src="./images/directory-img.svg" alt="img" class="directory-img"></div>
+                        <button class="tools-btn">Visit</button>
+                    </div>
+                </div>
+                <div class="tools-item new-tools-margin">
                     <div class="tools-free .d-flex">
                         <img src="./images/toolbox.svg" alt="img" class="toolbox-img">
                         <div class="tools-free-item">
@@ -343,14 +341,14 @@
             </div>
             <div class="col-lg-3  my-20 col-sm-6">
                 <div class="tools-item new-tools-margin">
-                        <div class="tools-free">
-                            <img src="./images/phpstorm.svg" alt="img" class="phpstorm-img">
-                            <div class="tools-free-item">
-                                <h2 class="tools-free-title">PHPStorm</h2>
-                                <a href="# https://www.figma.com" class="free">Free</a>
-                            </div>
+                    <div class="tools-free">
+                        <img src="./images/phpstorm.svg" alt="img" class="phpstorm-img">
+                        <div class="tools-free-item">
+                            <h2 class="tools-free-title">PHPStorm</h2>
+                            <a href="# https://www.figma.com" class="free">Free</a>
                         </div>
-                        <p class="tools-free-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <p class="tools-free-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <div class="tools-item-inner">
                         <div class="tools-item-img">
                             <img src="./images/heart.svg" alt="img" class="heart-img">
@@ -358,7 +356,7 @@
                         </div>
                         <button class="tools-btn">Visit</button>
                     </div>
-                        </div>
+                </div>
                 <div class="tools-item new-tools-margin ">
                     <div class="tools-free flex">
                         <img src="./images/procreate.svg" alt="img" class="procreate-img">
@@ -383,19 +381,12 @@
 <section id="blog" class="team swiper">
     <div class="container swiper-wrapper">
         <div class="team-item swiper-slide ">
-                <img class="" src="./images/team-img.png" alt="img">
-                <p class="team-list"><img class="team-item-img" src="./images/team-img2.svg" alt="img"> Incididunt
-                      cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad
-                      sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur
-                      amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
-                   </p>
-               </div>
-        <div class="team-item swiper-slide ">
             <img class="" src="./images/team-img.png" alt="img">
             <p class="team-list"><img class="team-item-img" src="./images/team-img2.svg" alt="img"> Incididunt
                 cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad
                 sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur
-                amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id
+                qui ad.
             </p>
         </div>
         <div class="team-item swiper-slide ">
@@ -403,20 +394,29 @@
             <p class="team-list"><img class="team-item-img" src="./images/team-img2.svg" alt="img"> Incididunt
                 cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad
                 sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur
-                amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id
+                qui ad.
             </p>
         </div>
+        <div class="team-item swiper-slide ">
+            <img class="" src="./images/team-img.png" alt="img">
+            <p class="team-list"><img class="team-item-img" src="./images/team-img2.svg" alt="img"> Incididunt
+                cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit do. Velit ex tempor cillum ad
+                sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna officia incididunt consectetur
+                amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non laboris id
+                qui ad.
+            </p>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
 </section>
 <section class="info">
     <div class="container info-container">
         <h3 class="section__title">Become a contributor?</h3>
-        <p class="section__desc text-lg-start">Join us and get tips & tricks to become a great Designer and Developer</p>
+        <p class="section__desc text-lg-start">Join us and get tips & tricks to become a great Designer and
+            Developer</p>
         <form class="feedback-form">
             <input class="feedback-email info-email" type="email" placeholder="Enter your email...">
             <button class="feedback-btn info-btn">Join Us</button>
@@ -426,24 +426,24 @@
 <footer class="footer">
     <div class="container">
         <div class="row mx--2">
-            <div class="col-lg-3 col-sm-12">
-                <a href="#"><img src="./images/logo-img.png" alt="img" class="footer-logo-img"></a>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <a class="footer-logo-img" href="#"><img src="./images/logo-img.png" alt="img" class="footer-logo-img"></a>
                 <a href="#" class="copyright">Copyright 2021. Antools</a>
-                <p class="footer-desc">Antool is a web collection of information on paid or free Design and Development
+                <p class="footer-desc">Antool is a web collection of   information on paid or free Design and Development
                     tools</p>
             </div>
-            <div class="col-lg-3 col-sm-12">
+            <div class="col-lg-3 col-md-6  col-sm-12">
                 <h3 class="footer-title"><a href="#">Contact Us</a></h3>
                 <p class="footer-desc"><a href="tel:+621987463">+621987463</a></p>
-                <p class="footer-desc"><a href="#M Building, No.10 A">M Building, No.10 A</a></p>
+                <p class="footer-desc"><a href="#">M Building, No.10 A</a></p>
                 <p class="footer-desc"><a href="https://antools@awesome.com">antools@awesome.com</a></p>
             </div>
-            <div class="col-lg-3 col-sm-12">
+            <div class="col-lg-3 col-md-6 col-sm-12">
                 <h3 class="footer-title"><a href="#">Categories</a></h3>
                 <p class="footer-desc"><a href="#">Design</a></p>
                 <p class="footer-desc"><a href="#">Development</a></p>
             </div>
-            <div class="col-lg-3 col-sm-12">
+            <div class="col-lg-3 col-ms-6 col-sm-12">
                 <h3 class="footer-title"><a href="#">Company Info</a></h3>
                 <p class="footer-desc"><a href="#">About Us</a></p>
                 <p class="footer-desc"><a href="#">Our Partners</a></p>
@@ -452,10 +452,10 @@
         </div>
     </div>
 </footer>
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-<script src="./js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="./js/jquery.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>

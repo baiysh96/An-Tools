@@ -12,15 +12,20 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(36, 44, 50, 1);
+    background: #1E252B;
     overflow-x: hidden;
 }
 
 a {
-
+    display: inline-block;
     text-decoration: none;
     text-transform: none;
+    list-style-type: none;
+    color: white;
 
+}
+button {
+    border: none;
 }
 
 a:hover {
@@ -43,6 +48,7 @@ a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .menu-item {
@@ -50,6 +56,7 @@ a:hover {
     font-size: 16px;
     line-height: 24px;
     color: rgba(255, 255, 255, 0.55);
+    transition: 0.5s;
 }
 
 .burger {
@@ -150,6 +157,7 @@ a:hover {
 }
 
 .header-btn {
+    border: none;
     width: 118px;
     height: 48px;
     padding: 12px 27px;
@@ -159,6 +167,7 @@ a:hover {
     font-size: 15px;
     line-height: 22px;
     color: #FDF5FF;
+    transition-duration: 0.5s;
 
 }
 
@@ -212,17 +221,19 @@ a:hover {
 
 .feedback-icon i {
     position: absolute;
-    left: 14px;
-    bottom: 18px;
+    top: 21px;
+    left: 21px;
+    bottom: 21px;
     font-size: 28px;
     color: rgba(255, 255, 255, 0.38);
 
 }
 
 .feedback-email {
+    border: none;
     width: 497px;
     height: 64px;
-    padding: 21px 111px 21px 55px;
+    padding: 21px 252px 21px 55px;
     background: #283036;
     border-radius: 15px;
     font-size: 14px;
@@ -231,6 +242,7 @@ a:hover {
 }
 
 .feedback-btn {
+    border: none;
     width: 130px;
     height: 48px;
     background: #FF6E30;
@@ -281,26 +293,26 @@ a:hover {
 
 .tools-item {
     margin-bottom: 120px;
-    background: inherit;
+    background: rgba(30, 37, 43, 0.99);
     border-radius: 15px;
     padding: 33px;
     transition: 0.5s;
-
+    cursor: pointer;
 }
 
 .tools-item:hover {
     background: rgba(40, 48, 54, 0.6);
     opacity: 1;
-    backdrop-filter: blur(50%);
+    backdrop-filter: blur(70%);
     border-radius: 10px;
-    border: 1px solid #5c636a;
-    box-shadow: -moz-win-communicationstext;
+    box-shadow: gainsboro;
 
 
 }
 
 .tools-free {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
 }
 
@@ -330,16 +342,14 @@ a:hover {
     padding: 60px 0;
 }
 
-.new-tools .tools-item {
-
-}
-
 .swiper-button-next:after {
     color: #FF6E30;
+    font-size: 32px;
 }
 
 .swiper-button-prev:after {
     color: #FF6E30;
+    font-size: 32px;
 }
 
 .section__desc {
@@ -380,12 +390,18 @@ a:hover {
     background-color: inherit;
     color: #9999;
     border-radius: 8px;
+    transition-duration: 0.5s;
 }
-
-.tools-item button:hover {
+.tools-item:hover .tools-btn {
     background: #FF6E30;
     color: #FFFFFF;
 }
+
+.tools-item:hover .heart-img{
+    color: #FD3B41;
+
+}
+
 
 .nation-img {
     display: block;
@@ -412,6 +428,7 @@ a:hover {
     bottom: 60px;
     margin: 0 auto;
     left: 580px;
+    transition-duration: 0.6s;
 }
 
 .tools-button:hover {
@@ -420,19 +437,25 @@ a:hover {
 }
 
 .heart-img {
+    background: #283036;
+    box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
+    border-radius: 8px;
     margin-right: 20px;
+    padding: 12px 8px 8px;
+}
+.directory-img {
+    background: #283036;
+    box-shadow: 0 5px 10px -3px rgba(18, 18, 18, 0.15);
+    border-radius: 8px;
 }
 
-.heart-img:hover {
-    color: rgba(253, 59, 65, 1)
-}
-
-.brands {
-    background: rgba(44, 53, 61, 0.2);
+.brands-container {
+    background: rgba(44, 53, 61, 0.49);
     backdrop-filter: blur(50px);
-    /* Note: backdrop-filter has minimal browser support */
     border-radius: 25px;
-    padding: 55px 0;
+    padding: 55px 82px;
+    border: 2px solid;
+    border-image-source: linear-gradient(92.39deg, rgba(255, 255, 255, 0.05) -4.6%, rgba(255, 255, 255, 0) 96.79%);
 }
 
 .brands-title {
@@ -442,11 +465,6 @@ a:hover {
     line-height: 36px;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 56px;
-}
-
-.brands-item {
-    display: flex;
-    justify-content: space-between;
 }
 
 .team {
@@ -462,11 +480,9 @@ a:hover {
 
 }
 .team-list {
-    /*background: url("../images/" .svg);*/
     font-weight: normal;
     font-size: 14px;
     line-height: 30px;
-    /* or 214% */
     letter-spacing: 0.015em;
     color: rgba(255, 255, 255, 0.78);
     text-align: center;
@@ -477,16 +493,26 @@ a:hover {
 .team-item-img {
     width: 103px;
     height: 320px;
-    /*width: 50px;*/
-    /*height: 150px;*/
     transform: rotate(29deg);
     position: absolute;
     top: 0;
 
 }
 
-.swiper-pagination {
-    color: #FF6E30;
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
+    width: 44px;
+    border: none;
+    background-color: #283036;
+    color: #283036;
+    border-radius: 4px;
+    height: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+.swiper-pagination-bullet, .swiper-pagination-bullet-active:hover {
+    background-color: #FF6E30;
+    border-radius: 4px;
 }
 
 .info-container {
@@ -499,6 +525,9 @@ a:hover {
 
 .new-tools-item {
     margin: 0 12px;
+}
+.section__title-text-left,.section__desc-text-left {
+    text-align: start;
 }
 
 .new-tools-margin {
@@ -515,18 +544,20 @@ a:hover {
     line-height: 27px;
     color: #FFFFFF;
     padding: 15px 38px;
+    transition: 0.5s;
 
+}
+.new-tools-btn:hover{
+    background: #FFFFFF ;
+    border-radius: 10px;
+    color: #FF6E30;
 }
 
 .new-tool-text-align {
     margin-right: 100px;
+    text-align: left;
 }
 
-.swiper-horizontal .swiper-scrollbar {
-    cursor: pointer;
-    background-color: #FF6E30;
-    color: black;
-}
 
 .info-email {
     position: relative;
@@ -534,15 +565,19 @@ a:hover {
 
 .info-btn {
     position: absolute;
-    right: 5px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+
 
 }
 
 .footer {
-    padding: 30px 0;
+    padding: 70px 0;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.15);
 }
 
-.logo-img {
+.footer-logo-img {
     display: block;
     margin-bottom: 27px;
 }

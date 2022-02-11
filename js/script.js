@@ -35,6 +35,8 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
+        click: true,
+        loop: true,
 
     },
 
@@ -44,12 +46,6 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-        loop: true,
-    },
     breakpoints: {
         320: {
             spaceBetween: 50,
@@ -66,15 +62,16 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-
-const button = document.querySelector('#button');
-const tooltip = document.querySelector('#tooltip');
-
-// Pass the button, the tooltip, and some options, and Popper will do the
-// magic positioning for you:
-Popper.createPopper(button, tooltip, {
-    placement: 'right',
+const dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+ const dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+    return new bootstrap.Dropdown('dropdownToggleEl')
+})
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        glyphOrientationHorizontal: true,
+        items: 3,
+        loop: true,
+        nav: true,
+    });
 });
-createPopper(button, tooltip, {
-    modifiers: [preventOverflow, flip],
-});
+AOS.init();
